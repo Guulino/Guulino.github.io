@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    height: 100vh;
+}
+.left, .right {
+    width: 50%;
+}
+.left {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+.right {
+    background-color: white;
+    padding: 20px;
+    overflow-y: auto;
+}
+.left h1, .left h2 {
+    margin: 20px 0;
+}
+.left a {
+    text-decoration: none;
+    color: black;
+}
+.left a:hover {
+    text-decoration: underline;
+}
+#trucs-list {
+    list-style: none;
+    padding: 0;
+}
+#trucs-list li {
+    margin: 10px 0;
+}
+#trucs-list li a {
+    text-decoration: none;
+    color: #555;
+}
+.right p {
+    margin: 20px 0;
+}
+.right img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+.right a {
+    text-decoration: none;
+    color: #555;
+}
+.right iframe {
+    width: 100%;
+    height: 400px;
+    margin: 20px 0;
+}
+img.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+    background: rgba(0, 0, 0, 0.99);
+    z-index: 9999;
+}
+.category-list {
+    list-style: none;
+    padding-left: 0; /* Changed from 20px to 0 */
+    text-align: left;
+    line-height: 1.2;
+}
+.category-item {
+    margin: 3px 0;
+}
+.project-list {
+    list-style: none;
+    padding-left: 0px; /* Changed from 20px to 10px */
+    margin: 2px 0;
+    text-align: left;
+}
+.category-link {
+    text-decoration: none;
+    color: inherit;
+    font-size: 0.7em;
+    font-weight: bold;
+}
+.project-link {
+    text-decoration: none;
+    color: inherit;
+    font-size: 0.7em;
+    font-weight: normal;
+}
+.category-link:hover, .project-link:hover {
+    text-decoration: underline;
+}

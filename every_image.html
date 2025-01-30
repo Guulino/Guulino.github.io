@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RGB Space Explorer (15x15)</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #000;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        canvas {
+            border: 1px solid #333;
+            margin: 20px;
+            image-rendering: pixelated;
+        }
+        .controls {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin: 20px;
+        }
+        label {
+            margin-right: 10px;
+        }
+        .speed-display {
+            min-width: 150px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="pixelCanvas" width="1920" height="1080" style="width: 1920px; height: 1080px;"></canvas>
+    <div class="controls" style="display: none;">
+        <div>
+            <label for="speedRange">Speed (updates/frame):</label>
+            <input type="range" id="speedRange" min="0" max="12" value="3" step="1">
+            <span class="speed-display" id="speedValue">1000</span>
+        </div>
+        <button id="pauseButton">Pause</button>
+    </div>
+    <div style="display: none;" id="status" ></div>
+    <script>
+        const canvas = document.getElementById('pixelCanvas');
+        const ctx = canvas.getContext('2d');
+        const speedRange = document.getElementById('speedRange');
+        const speedValue = document.getElementById('speedValue');
+        const pauseButton = document.getElementById('pauseButton');
+        const status = document.getElementById('status');
+        
+        ctx.imageSmoothingEnabled = false;
+        
+        // Fill initial black background
+        ctx.fillStyle = 'black';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        
+        let imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        let data = imageData.data;
+        
+        // Initialize all pixels to track RGB values
+        const pixels = [];
+        for (let y = 0; y < canvas.height; y++) {
+            for (let x = 0; x < canvas.width; x++) {
+                pixels.push({ r: 0, g: 0, b: 0 });
+            }
+        }
+        
+        let isPaused = false;
+
+        function getSpeed() {
+            return 24;
+        }
+
+        function formatNumber(n) {
+            if (n < 1000) return n.toString();
+            return n.toExponential(2);
+        }
+
+        function updatePixelDisplay(index) {
+            const pixel = pixels[index];
+            const idx = index * 4;
+            data[idx] = pixel.r;
+            data[idx + 1] = pixel.g;
+            data[idx + 2] = pixel.b;
+            data[idx + 3] = 255;
+        }
+
+        function incrementFirstPixel() {
+            const pixel = pixels[0];
+            
+            // Increment red first
+            pixel.r++;
+            if (pixel.r > 255) {
+                pixel.r = 0;
+                pixel.b++;
+                if (pixel.b > 255) {
+                    pixel.b = 0;
+                    pixel.g++;
+                    if (pixel.g > 255) {
+                        // Reset first pixel
+                        pixel.r = 0;
+                        pixel.g = 0;
+                        pixel.b = 0;
+                        // Increment next pixel
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
+        function incrementNextPixel(index) {
+            if (index >= pixels.length) return false;
+            
+            const pixel = pixels[index];
+            pixel.r++;
+            if (pixel.r > 255) {
+                pixel.r = 0;
+                pixel.b++;
+                if (pixel.b > 255) {
+                    pixel.b = 0;
+                    pixel.g++;
+                    if (pixel.g > 255) {
+                        // Reset current pixel
+                        pixel.r = 0;
+                        pixel.g = 0;
+                        pixel.b = 0;
+                        // Increment next pixel
+                        return incrementNextPixel(index + 1);
+                    }
+                }
+            }
+            return false;
+        }
+
+        function updatePixels(count) {
+            if (isPaused) return;
+            
+            for (let i = 0; i < count; i++) {
+                // Always increment the first pixel
+                const needCarry = incrementFirstPixel();
+                
+                // If we need to carry, increment the next pixel
+                if (needCarry) {
+                    incrementNextPixel(1);
+                }
+                
+                // Update display for all pixels
+                for (let j = 0; j < pixels.length; j++) {
+                    updatePixelDisplay(j);
+                }
+            }
+            
+            // Update the canvas
+            ctx.putImageData(imageData, 0, 0);
+            
+            // Update status display
+            const totalPixels = canvas.width * canvas.height;
+            const firstPixel = pixels[0];
+            const currentCombination = (firstPixel.r * 256 * 256) + (firstPixel.g * 256) + firstPixel.b;
+            
+            status.textContent = 
+                `First Pixel RGB: (${firstPixel.r}, ${firstPixel.g}, ${firstPixel.b}) | ` +
+                `Total Pixels: ${totalPixels} | ` +
+                `Updates per frame: ${formatNumber(count)}`;
+        }
+        
+        speedRange.addEventListener('input', () => {
+            const speed = getSpeed();
+            speedValue.textContent = formatNumber(speed) + " updates/frame";
+        });
+        
+        pauseButton.addEventListener('click', () => {
+            isPaused = !isPaused;
+            pauseButton.textContent = isPaused ? 'Resume' : 'Pause';
+        });
+        
+        speedValue.textContent = formatNumber(getSpeed()) + " updates/frame";
+        
+        function animate() {
+            updatePixels(getSpeed());
+            requestAnimationFrame(animate);
+        }
+        
+        animate();
+    </script>
+</body>
+</html>
