@@ -76,12 +76,13 @@ document.addEventListener('DOMContentLoaded', () => {
             id: "reducing",
             projects: {
                 "every images":
-                    ["every single possible 1920*1080p image",
+                    ["every single possible 100*100p image",
                     '<a href="every_image.html">this link</a> will take you to a black image.',
-                    "24 times a second, the image will change, in such a way that, given enough time this page will display every image that will ever exist",
+                    "24 times a second, the image will change, in such a way that, given enough time this page will display every 100 pixels by 100 pixels image that will ever exist",
                     "every frame, the top left pixel has his color value increased. It becomes a little more red, then green, then blue. ",
                     "once it is white, we increase the color value of the next pixel and start again",
                     "to see every images, you would need much, much longer than the lifetime of the universe. But if you could wait that long, you'd see everything.",
+                    "this film started at the beginning of the universe, 13.8 billions years ago, which is why the first few pixels are already colored in",
                     "please be patient"
                 ],
                 "average image in a movie": [

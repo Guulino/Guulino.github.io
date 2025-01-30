@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>RGB Space Explorer (15x15)</title>
+    <title>every image</title>
     <style>
         body {
             margin: 0;
@@ -35,7 +35,7 @@
     </style>
 </head>
 <body>
-    <canvas id="pixelCanvas" width="1920" height="1080" style="width: 1920px; height: 1080px;"></canvas>
+    <canvas id="pixelCanvas" width="100" height="100" style="flex: auto;"></canvas>
     <div class="controls" style="display: none;">
         <div>
             <label for="speedRange">Speed (updates/frame):</label>
@@ -44,7 +44,7 @@
         </div>
         <button id="pauseButton">Pause</button>
     </div>
-    <div style="display: none;" id="status" ></div>
+    <div style="display: none;" id="status"></div>
     <script>
         const canvas = document.getElementById('pixelCanvas');
         const ctx = canvas.getContext('2d');
@@ -54,21 +54,53 @@
         const status = document.getElementById('status');
         
         ctx.imageSmoothingEnabled = false;
-        
-        // Fill initial black background
         ctx.fillStyle = 'black';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
         
         let imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
         let data = imageData.data;
         
-        // Initialize all pixels to track RGB values
+        // Cosmic time initialization (13.8 billion years in milliseconds)
+        const ageOfUniverseYears = 13800000000n; // 13.8 billion years
+        const millisecondsPerYear = 31557600000n; // 1 year = 31,557,600,000 ms
+        const ageOfUniverseMs = ageOfUniverseYears * millisecondsPerYear;
+        const baseSteps = (ageOfUniverseMs * 24n) / 1000n;
+        const currentSteps = (BigInt(Date.now()) * 24n) / 1000n;
+        let remainingSteps = baseSteps + currentSteps;
+        
+        const totalPixels = canvas.width * canvas.height;
         const pixels = [];
-        for (let y = 0; y < canvas.height; y++) {
-            for (let x = 0; x < canvas.width; x++) {
+        
+        // Initialize pixels based on cosmic time
+        for (let i = 0; i < totalPixels; i++) {
+            if (remainingSteps > 0n) {
+                const remainder = remainingSteps % 0x1000000n;
+                const rem = Number(remainder);
+                pixels.push({
+                    r: (rem >> 16) & 0xFF,
+                    g: (rem >> 8) & 0xFF,
+                    b: rem & 0xFF
+                });
+                remainingSteps = remainingSteps / 0x1000000n;
+            } else {
                 pixels.push({ r: 0, g: 0, b: 0 });
             }
         }
+        
+        // Initial render
+        function updatePixelDisplay(index) {
+            const pixel = pixels[index];
+            const idx = index * 4;
+            data[idx] = pixel.r;
+            data[idx + 1] = pixel.g;
+            data[idx + 2] = pixel.b;
+            data[idx + 3] = 255;
+        }
+        
+        for (let j = 0; j < pixels.length; j++) {
+            updatePixelDisplay(j);
+        }
+        ctx.putImageData(imageData, 0, 0);
         
         let isPaused = false;
 
@@ -81,19 +113,8 @@
             return n.toExponential(2);
         }
 
-        function updatePixelDisplay(index) {
-            const pixel = pixels[index];
-            const idx = index * 4;
-            data[idx] = pixel.r;
-            data[idx + 1] = pixel.g;
-            data[idx + 2] = pixel.b;
-            data[idx + 3] = 255;
-        }
-
         function incrementFirstPixel() {
             const pixel = pixels[0];
-            
-            // Increment red first
             pixel.r++;
             if (pixel.r > 255) {
                 pixel.r = 0;
@@ -102,11 +123,9 @@
                     pixel.b = 0;
                     pixel.g++;
                     if (pixel.g > 255) {
-                        // Reset first pixel
                         pixel.r = 0;
                         pixel.g = 0;
                         pixel.b = 0;
-                        // Increment next pixel
                         return true;
                     }
                 }
@@ -126,11 +145,9 @@
                     pixel.b = 0;
                     pixel.g++;
                     if (pixel.g > 255) {
-                        // Reset current pixel
                         pixel.r = 0;
                         pixel.g = 0;
                         pixel.b = 0;
-                        // Increment next pixel
                         return incrementNextPixel(index + 1);
                     }
                 }
@@ -142,32 +159,21 @@
             if (isPaused) return;
             
             for (let i = 0; i < count; i++) {
-                // Always increment the first pixel
                 const needCarry = incrementFirstPixel();
-                
-                // If we need to carry, increment the next pixel
-                if (needCarry) {
-                    incrementNextPixel(1);
-                }
-                
-                // Update display for all pixels
-                for (let j = 0; j < pixels.length; j++) {
-                    updatePixelDisplay(j);
-                }
+                if (needCarry) incrementNextPixel(1);
             }
             
-            // Update the canvas
+            for (let j = 0; j < pixels.length; j++) {
+                updatePixelDisplay(j);
+            }
+            
             ctx.putImageData(imageData, 0, 0);
             
-            // Update status display
-            const totalPixels = canvas.width * canvas.height;
             const firstPixel = pixels[0];
-            const currentCombination = (firstPixel.r * 256 * 256) + (firstPixel.g * 256) + firstPixel.b;
-            
             status.textContent = 
                 `First Pixel RGB: (${firstPixel.r}, ${firstPixel.g}, ${firstPixel.b}) | ` +
-                `Total Pixels: ${totalPixels} | ` +
-                `Updates per frame: ${formatNumber(count)}`;
+                `Time since Big Bang: ~13.8B years + current count | ` +
+                `Updates per frame: ${formatNumber(getSpeed())}`;
         }
         
         speedRange.addEventListener('input', () => {
