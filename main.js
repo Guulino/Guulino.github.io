@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Categories data structure
     const categories = {
-        "sorted trucs": {
-            id: "sorting",
+        "video": {
+            id: "video",
             projects: {
                 "alphabet sort": [
                     "trucs sorted in alphabetical order",
@@ -34,12 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     "sorting everything Brian David Gilbert ever said in alphabetical order",
                     "https://www.youtube.com/embed/sf5nd7W27Vk",
                     '<a href="https://www.youtube.com/playlist?list=PLET6XGg-4DJO3-LDjxQW9uIjLBbgjmWJA">click here for a playlist of the 53 volumes</a>'
-                ]
-            }
-        },
-        "trucs bizarres": {
-            id: "experiments",
-            projects: {
+                ],
                 "ellipses":["every ellipses in Harry Potter And The Chamber Of Secrets (2002), Extended Cut",
                     "this one is blocked right now sadly",
                     "https://www.youtube.com/embed/Mk-A5LGNZ5U"
@@ -69,12 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 ],
                 'twin-peaks': ['every episodes of "Twin Peaks: The Return" at the same time',
                     "https://www.youtube.com/embed/gNCGOAemzTo"
-                ]
-            }
-        },
-        "trucs réduits": {
-            id: "reducing",
-            projects: {
+                ],
                 "every images":
                     ["every single possible 100*100p image",
                     '<a href="every_image.html">this link</a> will take you to a black image.',
@@ -85,6 +75,33 @@ document.addEventListener('DOMContentLoaded', () => {
                     "this film started at the beginning of the universe, 13.8 billions years ago, which is why the first few pixels are already colored in",
                     "please be patient"
                 ],
+                "pixel wind":
+                    ["pixel wind",
+                    "pixels move depending on their colors. Hue sets their direction, saturation/luminance sets the distance",
+                    "Youtube compression kills the details on those",
+                    "https://www.youtube.com/embed/ocAEJ-FZuuQ",
+                    "https://www.youtube.com/embed/UGMigleOkE8"
+                ],
+                "timespace":
+                    ["alien television for time-space beings which have their space and time dimension swapped compared to us.",
+                    "the effect is made by, each nth frame, looking at the nth pixel of every single images from the original video",
+                    "this one adaptation was made froma cropped version of Twin Peaks: The Return",
+                    "https://www.youtube.com/embed/GkJrvBmS030",
+                ],
+            }
+        },
+        "audio": {
+            id: "audio",
+            projects: {
+                    "100000 years":["100 000 years of silence",
+                    'in an <a href="https://www.mediafire.com/file/j3614rt6759o1ef/output_w64.rar/file">audio file</a>'],
+                    "music for busy people":["music for busy people", "an album for people who just dont have the free time to listen to music",
+                    '<a href="https://www.youtube.com/playlist?list=PLET6XGg-4DJOTOf14BzMkQ5i8UigBuVu4">click here for the 62 tracks playlist</a>']
+            }
+        },
+        "image": {
+            id: "image",
+            projects: {
                 "average image in a movie": [
                     "image moyenne d'un film",
                     "2001 A Space Odyssey, Stanley Kubrick, 1968",
@@ -163,10 +180,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     "et voilà à quoi ça ressemble si on écrit tous les mots en même temps: ",
                     "https://i.postimg.cc/523bPjKV/Blended-words-hd.jpg",
                 ],
-                "100000 years":["100 000 years of silence",
-                    'in an <a href="https://www.mediafire.com/file/j3614rt6759o1ef/output_w64.rar/file">audio file</a>'],
-                "music for busy people":["music for busy people", "an album for people who just dont have the free time to listen to music",
-                    '<a href="https://www.youtube.com/playlist?list=PLET6XGg-4DJOTOf14BzMkQ5i8UigBuVu4">click here for the 62 tracks playlist</a>']
+
             }
         }
     };
