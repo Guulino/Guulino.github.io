@@ -128,6 +128,15 @@ img.fullscreen {
     text-decoration: underline;
 }
 
+.category-label {
+  cursor: pointer;
+}
+
+.category-label:hover {
+  text-decoration: underline;
+}
+
+
 .menu-toggle {
     display: none;
     position: fixed;
@@ -189,4 +198,10 @@ img.fullscreen {
     }
 }
 
+/* make category headers and project links show the hand cursor */
+.category-list > li,
+.project-list > li,
+.project-link {
+  cursor: pointer;
+}
 
