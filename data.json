@@ -5,8 +5,8 @@
       "description": "",
       "data": [
         "alien television for time-space beings which have their space and time dimension swapped compared to us.",
-        "the effect is made by, each nth frame, looking at the nth pixel of every single images from the original video",
-        "this one adaptation was made froma cropped version of Twin Peaks: The Return",
+        "the effect is made by, each nth frame, looking at the nth pixel of every single image from the original video",
+        "this one adaptation was made from a cropped version of Twin Peaks: The Return",
         "https://www.youtube.com/embed/GkJrvBmS030"
       ]
     },
@@ -15,14 +15,14 @@
       "description": "",
       "data": [
         "pixels move depending on their colors. Hue sets their direction, saturation/luminance sets the distance",
-        "Youtube compression kills the details on those",
+        "youtube compression kills the details on those",
         "https://www.youtube.com/embed/ocAEJ-FZuuQ",
         "https://www.youtube.com/embed/UGMigleOkE8"
       ]
     },
     {
       "title": "every single possible 100*100p image",
-      "description": "",
+      "description": "aka the longest movie ever not made",
       "data": [
         "<a href=\"every_image.html\">this link</a> will take you to a black image.",
         "24 times a second, the image will change, in such a way that, given enough time this page will display every 100 pixels by 100 pixels image that will ever exist",
@@ -37,7 +37,8 @@
       "title": "time cube",
       "description": "",
       "data": [
-        "these effects are achieved by treating a video as a 3D stack of images, and reading through the stack at different angles",
+        "treating a video file as a 3D cube of pixels, we can think of playing the video as going through the cube, layer by layer, top to bottom",
+        "what then happens if we read the cube sideways ? Or at an angle ?",
         "https://www.youtube.com/embed/oY70vKIAzzs",
         "https://youtube.com/embed/-M-r15z0ckw",
         "https://youtube.com/embed/YMAKNLIBk-w"
@@ -92,7 +93,6 @@
         "https://www.youtube.com/embed/gNCGOAemzTo"
       ]
     }
-    
   ],
    "audio": [    
     {
@@ -115,7 +115,7 @@
     "image": [    
     {
       "title": "average image in a movie",
-      "description": "average image in a movie",
+      "description": "every frame in a film, averaged.",
       "data": [
         "image moyenne d'un film",
         "2001 A Space Odyssey, Stanley Kubrick, 1968",
@@ -186,12 +186,31 @@
         "https://i.postimg.cc/pd9MnS8K/Wavelength-1967-Michael-Snow-963-PSj-AHo48-mp4.png",
         "Le Ravissement, Iris Kaltenbäck, 2023",
         "https://i.postimg.cc/YjcHpzjQ/Torrent911-bz-Le-Ravissement-2023-FRENCH-1080p-WEB-H264-FW-mp4.png"]
-},
+    },
+    {
+      "title": "squares",
+      "description": "",
+      "data": [
+        "photos of a 1 meter square of ground with no context",
+        "https://i.postimg.cc/c4gKQD3Q/P1158253.jpg",
+        "https://i.postimg.cc/nrsLGzXH/P1158257.jpg",
+        "https://i.postimg.cc/C1b0hqnn/P1158267.jpg",
+        "https://i.postimg.cc/nz3s1gT1/P1191737.png",
+        "https://i.postimg.cc/zv3y27cY/P1191738.png",
+        "https://i.postimg.cc/8P27whdx/P1191742.png",
+        "https://i.postimg.cc/qqYzPKPh/P1191745.jpg",
+        "https://i.postimg.cc/MpX8c4jS/P1158273.jpg",
+        "https://i.postimg.cc/9MH3nQgm/P1158298.jpg",
+        "https://i.postimg.cc/Y08J0fr0/P1158302.jpg"
+      ]
+    },
     {
       "title": "coriieeeeeeeeeeeeeeeeeeet",
-      "description": "coriieeeeeeeeeeeeeeeeeeet",
+      "description": "",
       "data": [
-        "in an <a href=\"https://www.mediafire.com/file/j3614rt6759o1ef/output_w64.rar/file\">audio file</a>",
+        "quel est le mot moyen de la langue française ?",
+        "la lettre la plus commune au début d'un mot est le C, en deuxième position, le O, etc...",
+        "on obtient coriieeeeeeeeeeeeeeeeeeet si on va au bout du raisonnement",
         "<b>peuseeeeeeeetetttteneseit</b>, si on pondère selon la fréquence d'utilisation dans les films francophones.",
         "et voilà à quoi ça ressemble si on écrit tous les mots en même temps: ",
         "https://i.postimg.cc/523bPjKV/Blended-words-hd.jpg"
