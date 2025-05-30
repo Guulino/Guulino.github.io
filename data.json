@@ -21,6 +21,17 @@
       ]
     },
     {
+      "title": "temporal pixel sorting",
+      "description": "",
+      "data": [
+        "pixels are sorted, from their darkest values to brightest values",
+        "this effect works best on short video with minimal movement",
+        "https://www.youtube.com/embed/HNfAwU5zyns",
+        "https://www.youtube.com/embed/Y5tm8xWr5ZA",
+        "https://www.youtube.com/embed/XuczxSXFycc"
+      ]
+    },
+    {
       "title": "looking at paintings one pixel at a time",
       "description": "",
       "data": [
