@@ -140,6 +140,19 @@
   ],
     "image": [    
     {
+      "title": "pictures i took",
+      "description": "",
+      "data": [
+        "https://i.postimg.cc/90Ss0Sxf/P1192778.jpg",
+        "https://i.postimg.cc/Z56XYw6T/P1193079.jpg",
+        "https://i.postimg.cc/6Qwg8ChC/P1193097.jpg",
+        "https://i.postimg.cc/zv9P8hBb/P1193179.jpg",
+        "https://i.postimg.cc/GmrnD0LB/P1193014.jpg",
+        "https://i.postimg.cc/GmrnD0LB/P1193014.jpg"
+
+      ]
+    },
+    {
       "title": "average image in a movie",
       "description": "every frame in a film, averaged.",
       "data": [
@@ -217,7 +230,7 @@
       "title": "squares",
       "description": "",
       "data": [
-        "photos of a 1 meter square of ground with no context",
+        "pictures of a 1 meter square of ground with no context",
         "https://i.postimg.cc/c4gKQD3Q/P1158253.jpg",
         "https://i.postimg.cc/nrsLGzXH/P1158257.jpg",
         "https://i.postimg.cc/C1b0hqnn/P1158267.jpg",
@@ -234,6 +247,27 @@
         "https://i.postimg.cc/Q9tsDTxn/P1193119.png",
         "https://i.postimg.cc/34chxxkr/P1193122.png",
         "https://i.postimg.cc/6yGWTnVk/P1193128.png"
+      ]
+    },    
+    {
+      "title": "ground",
+      "description": "",
+      "data": [
+        "pictures of the ground",
+        "https://i.postimg.cc/02kCKcgk/P1192462.jpg",
+        "https://i.postimg.cc/4yZQ51m1/P1192469.jpg",
+        "https://i.postimg.cc/8cHBnrvg/P1192479.jpg",
+        "https://i.postimg.cc/Y2f3STsD/P1192491.jpg",
+        "https://i.postimg.cc/RFwTKYVF/P1192560.jpg",
+        "https://i.postimg.cc/Bvrg833k/P1192826.jpg",
+        "https://i.postimg.cc/jSkvbNFs/P1192829.jpg",
+        "https://i.postimg.cc/bvDgNJ71/P1192984.jpg",
+        "https://i.postimg.cc/sxRwLr07/P1193002.jpg",
+        "https://i.postimg.cc/MZysQnvD/P1193024.jpg",
+        "https://i.postimg.cc/VLmKBztc/P1193090.jpg",
+        "https://i.postimg.cc/x8ytD4W7/P1193230.jpg",
+        "https://i.postimg.cc/8zCw9wwK/P1193281.jpg"
+
       ]
     },
     {
