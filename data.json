@@ -1,13 +1,28 @@
 {
   "video": [
     {
-      "title": "timespace",
+      "title": "films seen from another dimension",
       "description": "",
       "data": [
-        "alien television for time-space beings which have their space and time dimension swapped compared to us.",
-        "the effect is made by, each nth frame, looking at the nth pixel of every single image from the original video",
-        "this one adaptation was made from a cropped version of Twin Peaks: The Return",
-        "https://www.youtube.com/embed/GkJrvBmS030"
+        "videos with the time dimension swapped with the height or width.",
+        "an input video of 1920x1080p of 3min (or +-4000 frames) becomes a video of 4000*1080 of 1m20 (or +-1920 frames)",
+        "time becomes spatial, the spatial becomes temporal",
+        "rythm becomes motifs, editing becomes composition",
+        "https://www.youtube.com/embed/2THaMMBoSvw",
+        "https://www.youtube.com/embed/CSg9nz266v0",
+        "https://www.youtube.com/embed/vJ_2k7AIovc",
+        "https://www.youtube.com/embed/H3nVIuKXA9w",
+        "https://www.youtube.com/embed/Qt1_-45yfCY",
+        "https://www.youtube.com/embed/dswGgI3zJMQ",
+        "https://www.youtube.com/embed/8LPmRhurZt8",
+        "https://www.youtube.com/embed/XY_hjpofOJ0",
+        "https://www.youtube.com/embed/R31J9fh5Jqo",
+        "https://www.youtube.com/embed/-KStEcc893w",
+        "https://www.youtube.com/embed/MCKd_homRmg",
+        "https://www.youtube.com/embed/TEYvP9oB8KM",
+        "https://www.youtube.com/embed/xvTkR4rMsig",
+        "https://www.youtube.com/embed/XE73d4QT-dY",
+        "https://www.youtube.com/embed/DY7CilL3cAw"
       ]
     },
     {
@@ -21,11 +36,10 @@
       ]
     },
     {
-      "title": "temporal pixel sorting",
+      "title": "sorting #2",
       "description": "",
       "data": [
-        "pixels are sorted, from their darkest values to brightest values",
-        "this effect works best on short video with minimal movement",
+        "pixels sorted, from their darkest to brightest values",
         "https://www.youtube.com/embed/HNfAwU5zyns",
         "https://www.youtube.com/embed/Y5tm8xWr5ZA",
         "https://www.youtube.com/embed/XuczxSXFycc"
@@ -35,7 +49,7 @@
       "title": "looking at paintings one pixel at a time",
       "description": "",
       "data": [
-        "famous paintings, seen a single pixel at a time, 24 times per second.",
+        "paintings, seen a single pixel at a time, 24 times per second.",
         "the audio is derived from the color variations",
         "https://www.youtube.com/embed/1XOAFOxF5Zo",
         "https://www.youtube.com/embed/RLMToV8CyEY",
@@ -60,18 +74,7 @@
       ]
     },
     {
-      "title": "time cube",
-      "description": "",
-      "data": [
-        "treating a video file as a 3D cube of pixels, we can think of playing the video as going through the cube, layer by layer, top to bottom",
-        "what then happens if we read the cube sideways ? Or at an angle ?",
-        "https://www.youtube.com/embed/oY70vKIAzzs",
-        "https://youtube.com/embed/-M-r15z0ckw",
-        "https://youtube.com/embed/YMAKNLIBk-w"
-      ]
-    },
-    {
-      "title": "stuff sorted in alphabetical order",
+      "title": "sorting #1",
       "description": "",
       "data": [
         "https://www.youtube.com/embed/ORE4-dAFkg0",
@@ -82,41 +85,11 @@
       ]
     },
     {
-      "title": "movies sorted by color",
-      "description": "",
-      "data": [
-        "https://www.youtube.com/embed/_vPYbt2kl5Q",
-        "https://www.youtube.com/embed/c4WDnTay2RY",
-        "https://www.youtube.com/embed/SBIYKCMT1dE",
-        "https://www.youtube.com/embed/zfxHS2qCF1w",
-        "https://www.youtube.com/embed/E5zWvNgKGN4",
-        "https://www.youtube.com/embed/BZKzrUHh7q4",
-        "https://www.youtube.com/embed/2Pm054RIP0k",
-        "https://www.youtube.com/embed/CknLdTVHDjM",
-        "https://www.youtube.com/embed/_0n8BL8_aqI"
-      ]
-    },
-    {
       "title": "sorting everything Brian David Gilbert ever said in alphabetical order.",
       "description": "",
       "data": [
         "https://www.youtube.com/embed/sf5nd7W27Vk",
         "<a href=\"https://www.youtube.com/playlist?list=PLNFI79D7MYqPlOvLY1TqRKnZWCGKMIIGw\">click here for a playlist of the 53 volumes</a>"
-      ]
-    },
-    {
-      "title": "every ellipses in «Harry Potter And The Chamber Of Secrets (2002)» Extended Cut",
-      "description": "",
-      "data": [
-        "this one is blocked right now sadly",
-        "https://www.youtube.com/embed/Mk-A5LGNZ5U"
-      ]
-    },
-    {
-      "title": "every episodes of «Twin Peaks: The Return» at the same time",
-      "description": "",
-      "data": [
-        "https://www.youtube.com/embed/gNCGOAemzTo"
       ]
     }
   ],
@@ -140,109 +113,48 @@
   ],
     "image": [    
     {
-      "title": "pictures i took",
+      "title": "average frame",
       "description": "",
       "data": [
-        "https://i.postimg.cc/90Ss0Sxf/P1192778.jpg",
-        "https://i.postimg.cc/Z56XYw6T/P1193079.jpg",
-        "https://i.postimg.cc/6Qwg8ChC/P1193097.jpg",
-        "https://i.postimg.cc/zv9P8hBb/P1193179.jpg",
-        "https://i.postimg.cc/GmrnD0LB/P1193014.jpg"
-
-      ]
-    },
-    {
-      "title": "average image in a movie",
-      "description": "every frame in a film, averaged.",
-      "data": [
-        "image moyenne d'un film",
         "2001 A Space Odyssey, Stanley Kubrick, 1968",
         "https://i.postimg.cc/fW1tt49f/2001-A-Space-Odyssey-1968-1080p-Blu-Ray-x264-YTS-AM-mp4.png",
         "A Trip to the Moon, Georges Méliès, 1902 ",
         "https://i.postimg.cc/h4XQt4fG/A-Trip-to-the-Moon-the-1902-Science-Fiction-Film-by-Georges-M-li-s-x-LVCh-RVf-Z74-mp4.png",
-        "An Autumn Afternoon, Yasujirō Ozu, 1962",
-        "https://i.postimg.cc/3xTk1g9y/An-Autumn-Afternoon-1962-Drama-Japan-1080p-BRRip-x264-Classics-mp4.png",
-        "Histoire de mes cheveux, Boris Lehman, 2010",
-        "https://i.postimg.cc/7Y7CSB18/Boris-Lehman-Histoire-de-mes-cheveux-2010-90-minutes-864512690-mp4.png",
-        "Calvaire, Fabrice Du Welz, 2004",
-        "https://i.postimg.cc/T3Jp4pHt/Calvaire-2004-1080p-WEBRip-x264-AAC5-1-YTS-MX-mp4.png",
-        "Casablanca, Michael Curtiz, 1942",
-        "https://i.postimg.cc/KY94mCbL/Casablanca-1942-70th-Anniv-1080p-Blu-Ray-x265-10bit-Tigole-mp4.png",
-        "Blood Tea and Red String, Christiane Cegavske, 2006",
-        "https://i.postimg.cc/MGZv2qCq/Christiane-Cegavske-Blood-Tea-And-Red-String-2006-mkv.png",
-        "Citizen Kane, Orson Welles, 1941",
-        "https://i.postimg.cc/ydkxxn6G/Citizen-Kane-1941-1080p-Blu-Ray-x265-10bit-Tigole-converted-mp4.png",
-        "Come And See, Elem Klimov, 1985",
-        "https://i.postimg.cc/gJQJZRn2/Come-And-See-1985-Criterion-1080p-Blu-Ray-x265-HEVC-AAC-SARTRE-mp4.png",
-        "E.T. The Extra-Terrestrial, Steven Spielberg, 1985",
-        "https://i.postimg.cc/sxW29Xh9/E-T-The-Extra-Terrestrial-1982-1080p-Blu-Ray-x264-YTS-AG-mp4.png",
-        "Full Metal Jacket, Stanley Kubrick, 1987",
-        "https://i.postimg.cc/664TNHm2/Full-Metal-Jacket-1987-1080p-Blu-Ray-x265-HDR-afm72-mkv.png",
-        "Grave of the Fireflies, Isao Takahata, 1988",
-        "https://i.postimg.cc/8P8ckh2y/Grave-of-the-Fireflies-1988-1080p-Blu-Ray-x265-Garshasp-mp4.png",
-        "Pinocchio, Guillermo del Toro, 2022",
-        "https://i.postimg.cc/J4bnssmR/Guillermo-Del-Toros-Pinocchio-2022-1080p-WEBRip-x264-AAC5-1-YTS-MX-mp4.png",
-        "Hero, Zhang Yimou, 2002",
-        "https://i.postimg.cc/L82sLm6L/Hero-2002-1080p-Molpol-converted-mp4.png",
-        "Chien de la casse, Jean-Baptiste Durand, 2023",
-        "https://i.postimg.cc/zG7Gk4VM/Junkyard-Dog-2023-1080p-AMZN-WEB-DL-DD5-1-H-264-MADSKY-mp4.png",
-        "Kung Fury, David Sandberg, 2015",
-        "https://i.postimg.cc/6QQ5bzZQ/KUNG-FURY-Official-Movie-HD-b-S5-P-LAqi-Vg-mp4.png",
-        "La Haine, Mathieu Kassovitz, 1995",
-        "https://i.postimg.cc/Ls04cfk3/La-Haine-1995-1080p-Blu-Ray-x264-AAC-5-1-POOP-mp4.png",
-        "Mulhollanb Drive, David Lynch, 2001",
-        "https://i.postimg.cc/Y9G2M9bK/Mulholland-Drive-2001-1080p-Blu-Ray-H264-AAC-RARBG-mp4.png",
-        "No Country For Old Men, Joel & Ethan Coen, 2007",
-        "https://i.postimg.cc/3Rs8RTcy/No-Country-For-Old-Men-2007-1080p-Br-Rip-x264-YIFY-mp4.png",
-        "Pig, Michael Sarnoski, 2021",
-        "https://i.postimg.cc/L5jHgbcx/Pig-2021-1080p-WEBRip-x264-AAC5-1-YTS-MX-mp4.png",
-        "Pulp Fiction, Quentin Tarantino, 1994",
-        "https://i.postimg.cc/44c40YYp/Pulp-Fiction-1994-1080p-Br-Rip-x264-YIFY-1-mp4.png",
-        "Rotting in the Sun, Sebastián Silva, 2023",
-        "https://i.postimg.cc/wTcq6ncv/Rotting-In-The-Sun-2023-1080p-WEBRip-x264-AAC-YTS-MX-mp4.png",
-        "Shrek, Andrew Adamson & Vicky Jenson, 2001",
-        "https://i.postimg.cc/0yV9Sm41/Shrek-2001-1080p-Blu-Ray-x264-YIFY-mp4.png",
-        "stalker, Andrei Tarkovsky, 1979",
+        "Stalker, Andrei Tarkovsky, 1979",
         "https://i.postimg.cc/cJ60BCqg/Stalker-mp4.png",
-        "The Grand Budapest Hotel, Wes Anderson, 2014",
-        "https://i.postimg.cc/pd7xGvx0/The-Grand-Budapest-Hotel-2014-1080p-BRRip-x264-AAC-JYK-mp4.png",
-        "The Birth of a Nation, D.W. Griffith, 1915",
-        "https://i.postimg.cc/856GxYzT/The-Birth-Of-A-Nation-1915-1080p-Blu-Ray-x264-YTS-LT-mp4.png",
         "The Cook, the Thief, His Wife & Her Lover, Peter Greenaway, 1989",
         "https://i.postimg.cc/D03hhcSL/The-Cook-the-Thief-His-Wife-Her-Lover-1989-1080p-Blu-Ray-x264-YIFY-mp4.png",
-        "The Holy Mountain, Alejandro Jodorowsky, 1973",
-        "https://i.postimg.cc/VL1wHDQc/The-Holy-Mountain-1973-REMASTERED-1080p-Blu-Ray-H264-AAC-LAMA-mp4.png",
-        "The Living End, Gregg Araki, 1992",
-        "https://i.postimg.cc/hPrnFTcQ/The-Living-End-1992-1080p-WEBRip-x264-AAC-YTS-MX-mp4.png",
-        "The Royal Tenenbaums, Wes Anderson, 2001",
-        "https://i.postimg.cc/W11vsz1W/The-Royal-Tenenbaums-2001-1080p-Blu-Ray-X264-AMIABLE-mkv.png",
-        "The Shining, Stanley Kubrick, 1980",
-        "https://i.postimg.cc/tgLQdztw/The-Shining-1980-US-1080p-Blu-Ray-H264-AAC-RARBG-mp4.png",
-        "Totally Fucked Up, Gregg Araki, 1993",
-        "https://i.postimg.cc/rwZLsTd8/Totally-Fucked-Up-1993-mkv.png",
         "Wavelength, Michael Snow, 1993",
-        "https://i.postimg.cc/pd9MnS8K/Wavelength-1967-Michael-Snow-963-PSj-AHo48-mp4.png",
-        "Le Ravissement, Iris Kaltenbäck, 2023",
-        "https://i.postimg.cc/YjcHpzjQ/Torrent911-bz-Le-Ravissement-2023-FRENCH-1080p-WEB-H264-FW-mp4.png"]
+        "https://i.postimg.cc/pd9MnS8K/Wavelength-1967-Michael-Snow-963-PSj-AHo48-mp4.png"]
+    },
+    {
+      "title": "average frame",
+      "description": "",
+      "data": [
+        "2001 A Space Odyssey, Stanley Kubrick, 1968",
+        "https://i.postimg.cc/fW1tt49f/2001-A-Space-Odyssey-1968-1080p-Blu-Ray-x264-YTS-AM-mp4.png",
+        "A Trip to the Moon, Georges Méliès, 1902 ",
+        "https://i.postimg.cc/h4XQt4fG/A-Trip-to-the-Moon-the-1902-Science-Fiction-Film-by-Georges-M-li-s-x-LVCh-RVf-Z74-mp4.png",
+        "Stalker, Andrei Tarkovsky, 1979",
+        "https://i.postimg.cc/cJ60BCqg/Stalker-mp4.png",
+        "The Cook, the Thief, His Wife & Her Lover, Peter Greenaway, 1989",
+        "https://i.postimg.cc/D03hhcSL/The-Cook-the-Thief-His-Wife-Her-Lover-1989-1080p-Blu-Ray-x264-YIFY-mp4.png",
+        "Wavelength, Michael Snow, 1993",
+        "https://i.postimg.cc/pd9MnS8K/Wavelength-1967-Michael-Snow-963-PSj-AHo48-mp4.png"]
     },
     {
       "title": "squares",
       "description": "",
       "data": [
         "pictures of a 1 meter square of ground with no context",
-        "https://i.postimg.cc/c4gKQD3Q/P1158253.jpg",
         "https://i.postimg.cc/nrsLGzXH/P1158257.jpg",
         "https://i.postimg.cc/C1b0hqnn/P1158267.jpg",
-        "https://i.postimg.cc/nz3s1gT1/P1191737.png",
-        "https://i.postimg.cc/zv3y27cY/P1191738.png",
         "https://i.postimg.cc/8P27whdx/P1191742.png",
         "https://i.postimg.cc/qqYzPKPh/P1191745.jpg",
         "https://i.postimg.cc/MpX8c4jS/P1158273.jpg",
         "https://i.postimg.cc/9MH3nQgm/P1158298.jpg",
-        "https://i.postimg.cc/Y08J0fr0/P1158302.jpg",
         "https://i.postimg.cc/Hkjjf7M4/P1192943.png",
         "https://i.postimg.cc/8z3sDPB8/P1192954.png",
-        "https://i.postimg.cc/PqwJqs2C/P1193099.png",
         "https://i.postimg.cc/ydhNFhqB/P1193119.png",
         "https://i.postimg.cc/tJX4D1y6/P1193122.png"
       ]
@@ -252,7 +164,6 @@
       "description": "",
       "data": [
         "pictures of the ground",
-        "https://i.postimg.cc/02kCKcgk/P1192462.jpg",
         "https://i.postimg.cc/4yZQ51m1/P1192469.jpg",
         "https://i.postimg.cc/8cHBnrvg/P1192479.jpg",
         "https://i.postimg.cc/Y2f3STsD/P1192491.jpg",
@@ -269,15 +180,13 @@
       ]
     },
     {
-      "title": "coriieeeeeeeeeeeeeeeeeeet",
+      "title": "pictures i took",
       "description": "",
       "data": [
-        "quel est le mot moyen de la langue française ?",
-        "la lettre la plus commune au début d'un mot est le C, en deuxième position, le O, etc...",
-        "on obtient coriieeeeeeeeeeeeeeeeeeet si on va au bout du raisonnement",
-        "<b>peuseeeeeeeetetttteneseit</b>, si on pondère selon la fréquence d'utilisation dans les films francophones.",
-        "et voilà à quoi ça ressemble si on écrit tous les mots en même temps: ",
-        "https://i.postimg.cc/523bPjKV/Blended-words-hd.jpg"
+        "https://i.postimg.cc/Z56XYw6T/P1193079.jpg",
+        "https://i.postimg.cc/zv9P8hBb/P1193179.jpg",
+        "https://i.postimg.cc/GmrnD0LB/P1193014.jpg"
+
       ]
     }
     ]

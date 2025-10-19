@@ -28,30 +28,22 @@
         label {
             margin-right: 10px;
         }
-        .speed-display {
-            min-width: 150px;
-            display: inline-block;
+        #datetime {
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 20px;
         }
     </style>
 </head>
 <body>
     <canvas id="pixelCanvas" width="100" height="100" style="flex: auto;"></canvas>
-    <div class="controls" style="display: none;">
-        <div>
-            <label for="speedRange">Speed (updates/frame):</label>
-            <input type="range" id="speedRange" min="0" max="12" value="3" step="1">
-            <span class="speed-display" id="speedValue">1000</span>
-        </div>
-        <button id="pauseButton">Pause</button>
+    <div id="datetime"></div>
+    <div id="description">
     </div>
-    <div style="display: none;" id="status"></div>
     <script>
         const canvas = document.getElementById('pixelCanvas');
         const ctx = canvas.getContext('2d');
-        const speedRange = document.getElementById('speedRange');
-        const speedValue = document.getElementById('speedValue');
-        const pauseButton = document.getElementById('pauseButton');
-        const status = document.getElementById('status');
+        const datetimeDisplay = document.getElementById('datetime');
         
         ctx.imageSmoothingEnabled = false;
         ctx.fillStyle = 'black';
@@ -67,6 +59,7 @@
         const baseSteps = (ageOfUniverseMs * 24n) / 1000n;
         const currentSteps = (BigInt(Date.now()) * 24n) / 1000n;
         let remainingSteps = baseSteps + currentSteps;
+        let totalStepsFromStart = remainingSteps;
         
         const totalPixels = canvas.width * canvas.height;
         const pixels = [];
@@ -103,14 +96,37 @@
         ctx.putImageData(imageData, 0, 0);
         
         let isPaused = false;
-
-        function getSpeed() {
-            return 24;
-        }
+        let stepCounter = 0n;
 
         function formatNumber(n) {
             if (n < 1000) return n.toString();
             return n.toExponential(2);
+        }
+
+        function updateDateTime() {
+            // Use current real time
+            const now = new Date();
+            
+            // Calculate frames based on milliseconds (0-23 for 24fps simulation)
+            const frames = Math.floor((now.getMilliseconds() / 1000) * 24);
+            
+            const seconds = now.getSeconds();
+            const minutes = now.getMinutes();
+            const hours = now.getHours();
+            const day = now.getDate();
+            const month = now.getMonth() + 1; // getMonth() returns 0-11
+            const year = now.getFullYear();
+            
+            // Format the datetime string:
+            const ff = frames.toString().padStart(2, '0');
+            const ss = seconds.toString().padStart(2, '0');
+            const mm = minutes.toString().padStart(2, '0');
+            const hh = hours.toString().padStart(2, '0');
+            const dd = day.toString().padStart(2, '0');
+            const MM = month.toString().padStart(2, '0');
+            const yyyy = year.toString();
+            
+            datetimeDisplay.textContent = `${yyyy}/${MM}/${dd} ${hh}:${mm}:${ss}:${ff}`;
         }
 
         function incrementFirstPixel() {
@@ -155,12 +171,13 @@
             return false;
         }
 
-        function updatePixels(count) {
+        function updatePixels() {
             if (isPaused) return;
             
-            for (let i = 0; i < count; i++) {
+            for (let i = 0; i < 24; i++) {
                 const needCarry = incrementFirstPixel();
                 if (needCarry) incrementNextPixel(1);
+                stepCounter++;
             }
             
             for (let j = 0; j < pixels.length; j++) {
@@ -169,27 +186,16 @@
             
             ctx.putImageData(imageData, 0, 0);
             
+            updateDateTime();
+            
             const firstPixel = pixels[0];
-            status.textContent = 
-                `First Pixel RGB: (${firstPixel.r}, ${firstPixel.g}, ${firstPixel.b}) | ` +
-                `Time since Big Bang: ~13.8B years + current count | ` +
-                `Updates per frame: ${formatNumber(getSpeed())}`;
         }
-        
-        speedRange.addEventListener('input', () => {
-            const speed = getSpeed();
-            speedValue.textContent = formatNumber(speed) + " updates/frame";
-        });
-        
-        pauseButton.addEventListener('click', () => {
-            isPaused = !isPaused;
-            pauseButton.textContent = isPaused ? 'Resume' : 'Pause';
-        });
-        
-        speedValue.textContent = formatNumber(getSpeed()) + " updates/frame";
+
+        // Initial datetime display
+        updateDateTime();
         
         function animate() {
-            updatePixels(getSpeed());
+            updatePixels();
             requestAnimationFrame(animate);
         }
         
