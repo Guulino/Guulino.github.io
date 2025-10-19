@@ -11,8 +11,13 @@ body {
     min-height: 100vh;
 }
 
-.left, .right {
-    width: 50%;
+.left {
+    width: 20%; 
+    padding: 20px;
+}
+
+.right {
+    width: 80%;
     padding: 20px;
 }
 
