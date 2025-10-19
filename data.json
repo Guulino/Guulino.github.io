@@ -5,7 +5,7 @@
       "description": "",
       "data": [
         "videos with the time dimension swapped with the height or width.",
-        "an input video of 1920x1080p of 3min (or +-4000 frames) becomes a video of 4000*1080 of 1m20 (or +-1920 frames)",
+        "an input video of 1920x1080p of 3min (or +-4000 frames) becomes a video of 4000*1080 of 1m20s (or +-1920 frames)",
         "time becomes spatial, the spatial becomes temporal",
         "rythm becomes motifs, editing becomes composition",
         "https://www.youtube.com/embed/2THaMMBoSvw",
@@ -36,7 +36,7 @@
       ]
     },
     {
-      "title": "sorting #2",
+      "title": "sorting things #2",
       "description": "",
       "data": [
         "pixels sorted, from their darkest to brightest values",
@@ -74,7 +74,7 @@
       ]
     },
     {
-      "title": "sorting #1",
+      "title": "sorting things #1",
       "description": "",
       "data": [
         "https://www.youtube.com/embed/ORE4-dAFkg0",

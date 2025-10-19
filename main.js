@@ -1,7 +1,6 @@
 // main.js — data decoupled, original behavior preserved with event propagation fixes
 
 document.addEventListener('DOMContentLoaded', () => {
-  const trucsLink = document.getElementById('trucs-link');
   const contactLink = document.getElementById('contact-link');
   const supportLink = document.getElementById('support-link');
   const content = document.getElementById('content');
@@ -24,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Build category list HTML (same as original)
       const categoryListHTML = `
-        <ul class="category-list" style="display:none;">
+        <ul class="category-list">
           ${Object.keys(categories).map(cat => `
             <li data-category="${cat}"><span class="category-label">${categories[cat].id}</span>
               <ul class="project-list" style="display:none;">
@@ -38,31 +37,21 @@ document.addEventListener('DOMContentLoaded', () => {
       `;
 
       // Insert after TRUCS link
-      trucsLink.insertAdjacentHTML('afterend', categoryListHTML);
+      homeLink.parentElement.insertAdjacentHTML('afterend', categoryListHTML);
 
       // Event listeners (identical to original)
       homeLink.addEventListener('click', (e) => {
         e.preventDefault();
-        document.querySelector('.category-list').style.display = 'none';
-        content.innerHTML = `<p>je fais des trucs</p>`;
-      });
-
-      trucsLink.addEventListener('click', (e) => {
-        e.preventDefault();
-        const categoryList = document.querySelector('.category-list');
-        categoryList.style.display = categoryList.style.display === 'none' ? 'block' : 'none';
         content.innerHTML = `<p>je fais des trucs</p>`;
       });
 
       contactLink.addEventListener('click', (e) => {
         e.preventDefault();
-        document.querySelector('.category-list').style.display = 'none';
         content.innerHTML = `<p>salut</p><p>mail: oliverigiuliano@outlook.com</p>`;
       });
 
       supportLink.addEventListener('click', (e) => {
         e.preventDefault();
-        document.querySelector('.category-list').style.display = 'none';
         content.innerHTML = `<p>merci :)</p><p><a href="https://ko-fi.com/gulino/">click here to help me make more stuff</a></p>`;
       });
 

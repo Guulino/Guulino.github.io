@@ -124,7 +124,7 @@ img.fullscreen {
 .project-link {
     text-decoration: none;
     color: inherit;
-    font-size: 0.8em;
+    font-size: 1.0em;
     font-weight: normal;
 }
 
@@ -134,7 +134,10 @@ img.fullscreen {
 }
 
 .category-label {
-  cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.7em;
+    font-weight: bold;
 }
 
 .category-label:hover {
@@ -209,4 +212,3 @@ img.fullscreen {
 .project-link {
   cursor: pointer;
 }
-
