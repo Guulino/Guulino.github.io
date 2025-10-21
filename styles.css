@@ -36,13 +36,17 @@ body {
     margin: 0 auto;
 }
 
+.right p.description {
+    color: #cecece;
+}
+
 .left h1, .left h2 {
     margin: 20px 0;
 }
 
 .left a {
     text-decoration: none;
-    color: black;
+    color: #333;
 }
 
 .left a:hover {
@@ -60,7 +64,7 @@ body {
 
 #trucs-list li a {
     text-decoration: none;
-    color: #555;
+    color: #333;
 }
 
 .right p {

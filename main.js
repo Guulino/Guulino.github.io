@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
           if (!projectContent) { console.error(`Project ${projectId} not found`); return; }
 
           content.innerHTML = '';
-          projectContent.forEach(item => {
+          projectContent.forEach((item, index) => {
             if (typeof item === 'string') {
               if (item.includes('youtube.com/embed')) {
                 content.innerHTML += `<iframe src="${item}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
@@ -90,7 +90,9 @@ document.addEventListener('DOMContentLoaded', () => {
               } else if (item.startsWith('<a') || item.startsWith('<b>')) {
                 content.innerHTML += item;
               } else {
-                content.innerHTML += `<p>${item}</p>`;
+                // Add 'description' class to the first paragraph (index 0)
+                const className = index === 0 ? ' class="description"' : '';
+                content.innerHTML += `<p${className}>${item}</p>`;
               }
             }
           });

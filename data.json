@@ -2,7 +2,7 @@
   "video": [
     {
       "title": "films seen from another dimension",
-      "description": "",
+      "description": "august 2025 to october 2025",
       "data": [
         "videos with the time dimension swapped with the height or width.",
         "an input video of 1920x1080p of 3min (or +-4000 frames) becomes a video of 4000*1080 of 1m20s (or +-1920 frames)",
@@ -27,7 +27,7 @@
     },
     {
       "title": "pixel wind",
-      "description": "",
+      "description": "may 2025",
       "data": [
         "pixels move depending on their colors. Hue sets their direction, saturation/luminance sets the distance",
         "youtube compression kills the details on those",
@@ -37,7 +37,7 @@
     },
     {
       "title": "sorting things #2",
-      "description": "",
+      "description": "may 2025",
       "data": [
         "pixels sorted, from their darkest to brightest values",
         "https://www.youtube.com/embed/HNfAwU5zyns",
@@ -47,7 +47,7 @@
     },
     {
       "title": "looking at paintings one pixel at a time",
-      "description": "",
+      "description": "october 2024",
       "data": [
         "paintings, seen a single pixel at a time, 24 times per second.",
         "the audio is derived from the color variations",
@@ -62,7 +62,7 @@
     },
     {
       "title": "every single possible 100*100p image",
-      "description": "aka the longest movie ever not made",
+      "description": "october 2024",
       "data": [
         "<a href=\"every_image.html\">this link</a> will take you to a black image.",
         "24 times a second, the image will change, in such a way that, given enough time this page will display every 100 pixels by 100 pixels image that will ever exist",
@@ -75,7 +75,7 @@
     },
     {
       "title": "sorting things #1",
-      "description": "",
+      "description": "january 2024",
       "data": [
         "https://www.youtube.com/embed/ORE4-dAFkg0",
         "https://www.youtube.com/embed/pUJjjANEzG4",
@@ -86,7 +86,7 @@
     },
     {
       "title": "sorting everything Brian David Gilbert ever said in alphabetical order.",
-      "description": "",
+      "description": "january 2024 to october 2024",
       "data": [
         "https://www.youtube.com/embed/sf5nd7W27Vk",
         "<a href=\"https://www.youtube.com/playlist?list=PLNFI79D7MYqPlOvLY1TqRKnZWCGKMIIGw\">click here for a playlist of the 53 volumes</a>"
@@ -96,15 +96,15 @@
    "audio": [    
     {
       "title": "100 000 years of silence",
-      "description": "",
+      "description": "april 2024",
       "data": [
         "100 000 years of silence",
-        "in an <a href=\"https://www.mediafire.com/file/j3614rt6759o1ef/output_w64.rar/file\">audio file</a>"
+        "in an <a href=\"https://drive.google.com/file/d/1B4n3uA6fGxE7OzL5xAehIJFOMwiMWgsA/view?usp=sharing\">audio file</a>"
         ]
     },
     {
       "title": "music for busy people",
-      "description": "",
+      "description": "october 2024",
       "data": [
         "an album for people who just dont have the free time to listen to music",
         "<a href=\"https://www.youtube.com/playlist?list=PLET6XGg-4DJOTOf14BzMkQ5i8UigBuVu4\">click here for the 62 tracks playlist</a>"
@@ -113,24 +113,57 @@
   ],
     "image": [    
     {
-      "title": "average frame",
-      "description": "",
+      "title": "film paintings #2",
+      "description": "october 2025",
       "data": [
-        "2001 A Space Odyssey, Stanley Kubrick, 1968",
-        "https://i.postimg.cc/fW1tt49f/2001-A-Space-Odyssey-1968-1080p-Blu-Ray-x264-YTS-AM-mp4.png",
-        "A Trip to the Moon, Georges Méliès, 1902 ",
-        "https://i.postimg.cc/h4XQt4fG/A-Trip-to-the-Moon-the-1902-Science-Fiction-Film-by-Georges-M-li-s-x-LVCh-RVf-Z74-mp4.png",
-        "Stalker, Andrei Tarkovsky, 1979",
-        "https://i.postimg.cc/cJ60BCqg/Stalker-mp4.png",
-        "The Cook, the Thief, His Wife & Her Lover, Peter Greenaway, 1989",
-        "https://i.postimg.cc/D03hhcSL/The-Cook-the-Thief-His-Wife-Her-Lover-1989-1080p-Blu-Ray-x264-YIFY-mp4.png",
-        "Wavelength, Michael Snow, 1993",
-        "https://i.postimg.cc/pd9MnS8K/Wavelength-1967-Michael-Snow-963-PSj-AHo48-mp4.png"]
+        "Paprika (2006), 01:11:17",
+        "https://i.postimg.cc/K85trdpM/Paprika-2006-2160p-4-K-Blu-Ray-x265-10bit-AAC5-1-YTS-MX-01-11-17.png",
+        "Paprika (2006), 00:34:34",
+        "https://i.postimg.cc/fbTmHB1X/Paprika-2006-2160p-4-K-Blu-Ray-x265-10bit-AAC5-1-YTS-MX-H-264-00-34-34.png",
+        "2001: A Space Odyssey (1968), 01:00:00",
+        "https://i.postimg.cc/yW48w8xK/2001-A-Space-Odyssey-1968-V2-2160p-Blu-Ray-x265-10bit-HDR-Tigole-01-00-00.png",
+        "2001: A Space Odyssey (1968), 00:17:17",
+        "https://i.postimg.cc/xqD1W189/2001-A-Space-Odyssey-1968-V2-2160p-Blu-Ray-x265-10bit-HDR-Tigole-H-264-00-17-17.png",
+        "2001: A Space Odyssey (1968), 00:34:34",
+        "https://i.postimg.cc/7b8ZpZhy/2001-A-Space-Odyssey-1968-V2-2160p-Blu-Ray-x265-10bit-HDR-Tigole-H-264-00-34-34.png",
+        "2001: A Space Odyssey (1968), 01:09:08",
+        "https://i.postimg.cc/ThM3Z31G/2001-A-Space-Odyssey-1968-V2-2160p-Blu-Ray-x265-10bit-HDR-Tigole-H-264-01-09-08.png",
+        "Adaptation (2002), 00:34:34",
+        "https://i.postimg.cc/HWf0p07m/Adaptation-2002-1080p-Blu-Ray-x265-10bit-Tigole-H-264-00-34-34.png",
+        "Annihilation (2018), 00:51:51",
+        "https://i.postimg.cc/rFx1zdS0/Annihilation-2018-2160p-4-K-Blu-Ray-x265-10bit-AAC5-1-YTS-MX-H-264-00-51-51.png",
+        "Arrival (2016), 00:34:34",
+        "https://i.postimg.cc/02DYr6p6/Arrival-2016-2160p-4-K-Blu-Ray-x265-10bit-AAC5-1-YTS-MX-H-264-00-34-34.png",
+        "Arrival (2016), 00:51:51",
+        "https://i.postimg.cc/MKV7XcyR/Arrival-2016-2160p-4-K-Blu-Ray-x265-10bit-AAC5-1-YTS-MX-H-264-00-51-51.png",
+        "Kin-Dza-Dza (1986), 00:30:00",
+        "https://i.postimg.cc/0yC7dLXx/Kin-dza-dza-1986-1080p-Blu-Ray-x265-10bit-r00t-00-30-00.png",
+        "Kin-Dza-Dza (1986), 01:00:00",
+        "https://i.postimg.cc/bwR1HKVv/Kin-dza-dza-1986-1080p-Blu-Ray-x265-10bit-r00t-01-00-00.png",
+        "Dogtooth (2009), 01:00:00",
+        "https://i.postimg.cc/Njt1Xg4d/Dogtooth-2009-1080p-Blu-Ray-x264-PHOBOS-01-00-00.png",
+        "Dogtooth (2009), 01:30:00",
+        "https://i.postimg.cc/fRsxdwKG/Dogtooth-2009-1080p-Blu-Ray-x264-PHOBOS-01-30-00.png",
+        "Enter the Void (2010), 00:17:17",
+        "https://i.postimg.cc/wjzhN62Y/Enter-the-Void-2010-Extended-1080p-Blu-Ray-x265-r00t-H-264-00-17-17.png",
+        "Enter the Void (2010), 00:51:51",
+        "https://i.postimg.cc/t4bh6Xky/Enter-the-Void-2010-Extended-1080p-Blu-Ray-x265-r00t-H-264-00-51-51.png",
+        "I'm Thinking of Ending Things (2020), 00:17:17",
+        "https://i.postimg.cc/3xhgGK1K/Im-Thinking-of-Ending-Things-2020-1080p-NF-WEB-DL-x265-Silence-H-264-00-17-17.png",
+        "Solaris (2002), 00:17:17",
+        "https://i.postimg.cc/6Q5nHYF4/Solaris-2002-1080p-Blu-Ray-x265-HEVC-EAC3-SARTRE-H-264-00-17-17.png",
+        "Stalker (1979), 00:17:17",
+        "https://i.postimg.cc/P5M1zBV4/Stalker-1979-CC-Bluray-1080p-DTS-HD-1-0-x264-Grym-H-264-00-17-17.png",
+        "Under the Silver Lake (2018), 02:00:00",
+        "https://i.postimg.cc/43NV8Bjw/Under-the-Silver-Lake-2018-1080p-Blu-Ray-x265-10bit-Tigole-02-00-00.png",
+        "Vivarium (2019), 00:30:00",
+        "https://i.postimg.cc/VNLn7D2H/Vivarium-2019-1080p-Blu-Ray-x265-10bit-Tigole-00-30-00.png"]
     },
     {
-      "title": "average frame",
-      "description": "",
+      "title": "film paintings #1",
+      "description": "november 2024",
       "data": [
+        "average frame in a film",
         "2001 A Space Odyssey, Stanley Kubrick, 1968",
         "https://i.postimg.cc/fW1tt49f/2001-A-Space-Odyssey-1968-1080p-Blu-Ray-x264-YTS-AM-mp4.png",
         "A Trip to the Moon, Georges Méliès, 1902 ",
@@ -144,7 +177,7 @@
     },
     {
       "title": "squares",
-      "description": "",
+      "description": "july 2025",
       "data": [
         "pictures of a 1 meter square of ground with no context",
         "https://i.postimg.cc/nrsLGzXH/P1158257.jpg",
@@ -161,7 +194,7 @@
     },    
     {
       "title": "ground",
-      "description": "",
+      "description": "february 2025",
       "data": [
         "pictures of the ground",
         "https://i.postimg.cc/4yZQ51m1/P1192469.jpg",
@@ -181,7 +214,7 @@
     },
     {
       "title": "pictures i took",
-      "description": "",
+      "description": "june 2025",
       "data": [
         "https://i.postimg.cc/Z56XYw6T/P1193079.jpg",
         "https://i.postimg.cc/zv9P8hBb/P1193179.jpg",
