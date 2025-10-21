@@ -38,6 +38,7 @@ body {
 
 .right p.description {
     color: #cecece;
+    margin: 20px 0 20px 0;
 }
 
 .left h1, .left h2 {
