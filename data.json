@@ -1,5 +1,12 @@
 {
   "video": [
+      {
+      "title": "films seen while falling into a blackhole",
+      "description": "november 2025",
+      "data": [
+        "https://www.youtube.com/embed/v37ZRqluxgg"
+      ]
+    },
     {
       "title": "films seen from another dimension",
       "description": "august 2025 to october 2025",
@@ -39,7 +46,7 @@
       "title": "sorting things #2",
       "description": "may 2025",
       "data": [
-        "pixels sorted, from their darkest to brightest values",
+        "pixels, sorted from their darkest to brightest values",
         "https://www.youtube.com/embed/HNfAwU5zyns",
         "https://www.youtube.com/embed/Y5tm8xWr5ZA",
         "https://www.youtube.com/embed/XuczxSXFycc"
@@ -250,8 +257,12 @@
     },
     {
       "title": "pictures i took",
-      "description": "june 2025",
+      "description": "",
       "data": [
+        "november 2025",
+        "https://i.postimg.cc/n9k2mVNv/1206345.jpg",
+        "https://i.postimg.cc/0KfnS5hS/1206352.jpg",
+        "june 2025",
         "https://i.postimg.cc/Z56XYw6T/P1193079.jpg",
         "https://i.postimg.cc/zv9P8hBb/P1193179.jpg",
         "https://i.postimg.cc/GmrnD0LB/P1193014.jpg"
